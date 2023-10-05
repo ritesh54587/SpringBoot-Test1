@@ -24,8 +24,9 @@ public class S1 {
 		 list2.add((char)temp1);
 	 }
 	 Map<Character, Integer> map = new HashMap<>();
-	 map.put(list2.get(0), list1.get(0));
-	 
+	 for(int i=0; i<list1.size(); i++) {
+	 map.put(list2.get(i), list1.get(i));
+	 }
 	return map;
 }
 }
